@@ -1,0 +1,1313 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+body {
+  background-color: #222831;
+  margin: 0px;
+}
+
+.espaco {
+  display: block;
+  height: 20px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Permite que os elementos quebrem para a próxima linha em telas pequenas */
+  align-items: flex-start;
+}
+
+.criando {
+  height: 50px;
+  width: 500px;
+  /* background-color: #2a7e57; */
+  margin-left: 180px;
+  display: inline-block;
+  line-height: 2px;
+}
+
+.excluindo {
+  height: 50px;
+  width: 500px;
+  /* background-color: #2a7e57; */
+  margin-left: 180px;
+  display: inline-block;
+  line-height: 1px;
+}
+
+.atualizando {
+  height: 50px;
+  width: 500px;
+  /* background-color: #2a7e57; */
+  margin-left: 180px;
+  display: inline-block;
+  line-height: 1px;
+}
+
+h1 {
+  font-family: 'Inknut Antiqua', serif;
+  color: aliceblue;
+}
+
+.navegacao {
+  width: 460px;
+  height: 38px;
+  padding-top: 8px;
+  margin-left: 50px;
+  /* background-color: #dbf15d; */
+  display: inline-block;
+  line-height: 18px;
+  font-family: 'Itim', sans;
+}
+
+/*FORMULÁRIO*/
+.listanav {
+  display: flex;
+  list-style: none;
+  height: 20px;
+  padding: 6px;
+  max-width: 410px;
+  margin: auto;
+  color: aliceblue;
+}
+
+.listanavdash {
+  display: flex;
+  list-style: none;
+  height: 20px;
+  padding: 6px;
+  max-width: 110px;
+  margin-left: 280px;
+  margin-top: -2px;
+  color: aliceblue;
+}
+
+.listanav li {
+  border-radius: 4px;
+}
+
+form p,
+i {
+  font-family: 'Inknut Antiqua', serif;
+  font-style: normal;
+  line-height: 0px;
+  font-size: 10pt;
+  display: block;
+}
+
+.anexos {
+  visibility: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  transition: background-color 0.3s;
+  background-color: #206467;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+a:hover {
+  background-color: #393E46;
+}
+
+.primeiro {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.terceiro {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.cpf {
+  max-width: 210px;
+  display: inline-block;
+  margin-top: 8px;
+  margin-right: 8px;
+}
+
+.cpflogin {
+  max-width: 170px;
+  display: inline-block;
+}
+
+.cpfexcluir {
+  max-width: 240px;
+  display: inline-block;
+}
+
+.cpfatualizar {
+  max-width: 190px;
+  display: inline-block;
+  margin-left: 15px;
+  vertical-align: top;
+}
+
+.sexo {
+  max-width: 120px;
+  display: inline-block;
+}
+
+.nomeRegistro {
+  max-width: 120px;
+  display: inline-block;
+  margin-right: 90px;
+}
+
+.recadoRegistro {
+  max-width: 160px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.dataRegistro {
+  max-width: 180px;
+  display: inline-block;
+  margin-left: 10px;
+  height: 147px;
+}
+
+.nomesenha {
+  width: 378px;
+  display: flex;
+  gap: 10px;
+}
+
+.senhacad {
+  position: relative;
+}
+
+.olho {
+  padding-top: 13px;
+}
+
+.logebuttom p {
+  text-align: center;
+  font-size: 20pt;
+  font-family: 'Inknut Antiqua', serif;
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.areatexto {
+  margin-top: 8px;
+  display: inline-block;
+  width: 160px;
+}
+
+.barra {
+  width: 160px;
+  border: none;
+  border-radius: 3px;
+  display: block;
+}
+
+.barrasenha {
+  width: 125px;
+  border: none;
+  border-radius: 3px;
+  display: block;
+}
+
+.barralogin {
+  width: 170px;
+  border: none;
+  border-radius: 3px;
+  display: block;
+}
+
+.barraRegistro {
+  width: 200px;
+  border: none;
+  border-radius: 3px;
+  display: block;
+}
+
+.barraData {
+  width: 174px;
+  border: none;
+  border-radius: 3px;
+  display: block;
+}
+
+.barra2 {
+  width: 205px;
+  border: none;
+  border-radius: 3px;
+}
+
+.barra2excluir {
+  width: 243px;
+  border: none;
+  border-radius: 3px;
+}
+
+.barra2atualizar {
+  width: 172px;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 57px;
+}
+
+.sexo p {
+  display: block;
+}
+
+p {
+  color: #eeeeee;
+}
+
+.formprincipal {
+  background-color: #393E46;
+  padding: 10px;
+  max-width: 360px;
+  margin: auto;
+  margin-top: 60px;
+  border-radius: 8px;
+  border: 3px solid #206467;
+}
+
+.formprincipallogin {
+  background-color: #393E46;
+  padding: 10px;
+  padding-top: 0px;
+  max-width: 360px;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 8px;
+  border: 3px solid #206467;
+}
+
+.formprincipalexcluir {
+  background-color: #393E46;
+  padding: 10px;
+  max-width: 250px;
+  margin: auto;
+  margin-top: 60px;
+  border-radius: 8px;
+  border: 3px solid #206467;
+}
+
+.filebuttom {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8px;
+  display: inline-block;
+  margin-left: 10px;
+  width: 183px;
+  height: 152px;
+  vertical-align: top;
+}
+
+.cpfatualizar {
+  align-items: center;
+  margin-top: 8px;
+}
+
+.filebuttom p {
+  margin-bottom: 18px;
+}
+
+.custom-file-button {
+  background-color: #EEEEEE;
+  color: #000000;
+  padding: 5px 33px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Itim', serif;
+  transition: background-color 0.3s;
+}
+
+.custom-file-button:hover {
+  background-color: #54635b;
+  color: #EEEEEE;
+}
+
+#fileStatus {
+  font-size: 12px;
+  color: #eeeeee;
+}
+
+.filespermitidos {
+  font-size: 8pt;
+  color: #ffe386;
+  margin-top: 10px;
+  margin-bottom: 6px;
+  line-height: 13px;
+}
+
+.msg {
+  height: 120px;
+  width: 160px;
+  resize: none;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Itim', sans;
+  font-size: 12pt;
+}
+
+input {
+  height: 25px;
+  font-family: 'Itim', sans;
+  font-size: 12pt;
+}
+
+.filebuttom input {
+  font-size: 10pt;
+  color: #EEEEEE;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.botoesform .botoesformexcluir .botoesformatualizar .botoesRegistro {
+  text-align: center;
+}
+
+.botoesRegistro {
+  display: inline-block;
+  margin-top: 56px;
+}
+
+.botoesformlogin {
+  margin-top: 10px;
+}
+
+.redefinir {
+  background-color: #AA3311;
+  color: aliceblue;
+  border: none;
+  line-height: 5px;
+  padding: 10px 25px;
+  margin-right: 8px;
+  margin-top: 15px;
+  border-radius: 3px;
+  transition: background-color 0.5s, border-radius 0.5s;
+  font-family: 'Itim', sans;
+}
+
+.redefinirlogin {
+  background-color: #AA3311;
+  color: aliceblue;
+  border: none;
+  line-height: 5px;
+  padding: 10px 17px;
+  margin-right: 8px;
+  border-radius: 3px;
+  transition: background-color 0.5s, border-radius 0.5s;
+  font-family: 'Itim', sans;
+}
+
+.redefinirRegistro {
+  background-color: #AA3311;
+  color: aliceblue;
+  border: none;
+  line-height: 5px;
+  padding: 10px 11px;
+  margin-right: 5px;
+  margin-top: 15px;
+  border-radius: 3px;
+  transition: background-color 0.5s, border-radius 0.5s;
+  font-family: 'Itim', sans;
+}
+
+.enviarRegistro {
+  background-color: #118866;
+  color: aliceblue;
+  padding: 10px 8px;
+  border: none;
+  line-height: 5px;
+  margin-top: 15px;
+  border-radius: 3px;
+  transition: background-color 0.5s, border-radius 0.5s;
+  font-family: 'Itim', sans;
+}
+
+.redefinirexcluir {
+  background-color: #AA3311;
+  color: aliceblue;
+  border: none;
+  line-height: 5px;
+  padding: 10px 25px;
+  margin-right: 8px;
+  margin-left: 42px;
+  margin-top: 15px;
+  border-radius: 3px;
+  transition: background-color 0.5s, border-radius 0.5s;
+  font-family: 'Itim', sans;
+}
+
+.redefiniratualizar {
+  background-color: #AA3311;
+  color: aliceblue;
+  border: none;
+  line-height: 5px;
+  padding: 10px 17px;
+  margin-right: 8px;
+  margin-left: 0px;
+  margin-top: 15px;
+  border-radius: 3px;
+  transition: background-color 0.5s, border-radius 0.5s;
+  font-family: 'Itim', sans;
+}
+
+.redefinir:hover {
+  background-color: #ff3311;
+  cursor: pointer;
+  border-radius: 0px;
+}
+
+.redefinirlogin:hover {
+  background-color: #ff3311;
+  cursor: pointer;
+  border-radius: 0px;
+}
+
+.redefinirexcluir:hover {
+  background-color: #ff3311;
+  cursor: pointer;
+  border-radius: 0px;
+}
+
+.redefinirRegistro:hover {
+  background-color: #ff3311;
+  cursor: pointer;
+  border-radius: 0px;
+}
+
+.enviar {
+  background-color: #118866;
+  color: aliceblue;
+  padding: 10px 16px;
+  border: none;
+  line-height: 5px;
+  margin-top: 15px;
+  border-radius: 3px;
+  transition: background-color 0.5s, border-radius 0.5s;
+  font-family: 'Itim', sans;
+}
+
+.enviarlogin {
+  background-color: #118866;
+  color: aliceblue;
+  padding: 10px 12px;
+  border: none;
+  line-height: 5px;
+  border-radius: 3px;
+  transition: background-color 0.5s, border-radius 0.5s;
+  font-family: 'Itim', sans;
+}
+
+.enviarexcluir {
+  background-color: #118866;
+  color: aliceblue;
+  padding: 10px 16px;
+  border: none;
+  line-height: 5px;
+  margin-top: 15px;
+  border-radius: 3px;
+  transition: background-color 0.5s, border-radius 0.5s;
+  font-family: 'Itim', sans;
+}
+
+.enviaratualizar {
+  background-color: #118866;
+  color: aliceblue;
+  padding: 10px 12px;
+  border: none;
+  line-height: 5px;
+  margin-top: 15px;
+  border-radius: 3px;
+  transition: background-color 0.5s, border-radius 0.5s;
+  font-family: 'Itim', sans;
+}
+
+.enviar:hover {
+  background-color: #11dd77;
+  cursor: pointer;
+  border-radius: 0px;
+}
+
+.enviarexcluir:hover {
+  background-color: #11dd77;
+  cursor: pointer;
+  border-radius: 0px;
+}
+
+.enviarRegistro:hover {
+  background-color: #11dd77;
+  cursor: pointer;
+  border-radius: 0px;
+}
+
+.enviarlogin:hover {
+  background-color: #11dd77;
+  cursor: pointer;
+  border-radius: 0px;
+}
+
+.dropdown-conteudo {
+  background-color: #f9f9f9;
+  padding: 5px 0px;
+  border-radius: 5px;
+  width: 134px;
+  border: none;
+  font-family: 'Itim', sans;
+  font-size: 11pt;
+}
+
+.dropdown-conteudo a {
+  color: #333;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-conteudo a:hover {
+  background-color: #e0e0e0;
+}
+
+/* Mostra o conteúdo ao passar o mouse */
+.dropdown:hover .dropdown-conteudo {
+  display: block;
+}
+
+/*CONTEÚDO PRINCIPAL*/
+.textomargin {
+  background-color: #393E46;
+  padding-left: 180px;
+  padding-right: 180px;
+  margin-top: 50px;
+}
+
+.textomargin h2 {
+  font-family: 'Inknut Antiqua', serif;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  color: #eeeeee;
+}
+
+.texto,
+.texto2 {
+  font-size: 12pt;
+  text-align: justify;
+  font-family: "Itim", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+  display: inline-block;
+  max-width: 500px;
+  color: #eeeeee;
+  margin-bottom: 20px;
+}
+
+.texto2 {
+  margin-left: 40px;
+}
+
+/*FOOTER*/
+.footer {
+  width: 100%;
+  background-color: #206467;
+  margin-top: 60px;
+}
+
+.footermargin {
+  margin-left: 180px;
+  padding-left: 80px;
+}
+
+.footer div {
+  margin-left: 50px;
+  margin-right: 40px;
+}
+
+.linksfooter {
+  padding-bottom: 24px;
+}
+
+.footer h2 {
+  padding-top: 15px;
+  margin-left: 50px;
+  color: #f9f9f9;
+  font-family: 'Inknut Antiqua', serifa;
+}
+
+.direitos {
+  text-align: right;
+  margin-top: 20px;
+  color: aliceblue;
+}
+
+/*REGISTRO*/
+.registros-container {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.registro-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.registro-card p {
+  color: #EEEEEE;
+  font-family: 'Itim', serif;
+}
+
+.registro-card>div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.registro-card strong {
+  font-weight: 600;
+}
+
+.resultado-contagem,
+.nenhum p {
+  font-family: 'Itim', serif;
+  text-align: center;
+}
+
+.campo-nome {
+  min-width: 200px;
+}
+
+.campo-sexo {
+  min-width: 200px;
+}
+
+.campo-recado {
+  min-width: 200px;
+  flex-grow: 1;
+}
+
+.campo-data {
+  min-width: 120px;
+}
+
+/*DARKMODE E WHITEMODE*/
+:root {
+  --bg-color-primary: #222831;
+  --bg-color-second: #393E46;
+  --primary-color: #206467;
+  --text-color: #eeeeee;
+  --text-color-y: #ffd000;
+  --border: 1px solid #eee;
+}
+
+[data-theme="light"] {
+  --bg-color-primary: #eeeeee;
+  --bg-color-second: #bdbfc4;
+  --text-color: #312d22;
+  --text-color-y: #9b7e00;
+  --primary-color: #206467;
+  --border: 1px solid #222831;
+}
+
+body {
+  background-color: var(--bg-color-primary);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.textomargin h2 {
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.textomargindash h2 {
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.formprincipal,
+.textomargin,
+.formprincipalexcluir,
+.fundocinza,
+.formprincipallogin {
+  background-color: var(--bg-color-second);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.divsemsenha a {
+  color: var(--text-color);
+  border-bottom: var(--border);
+}
+
+.textomargindash {
+  background-color: var(--bg-color-primary);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.registros-container p {
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+
+.registro-card {
+  border-bottom: var(--border);
+}
+
+.filespermitidos {
+  color: var(--text-color-y);
+}
+
+p {
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button,
+a {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* ESTILO BASE DO BOTÃO */
+#theme-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  /* Largura fixa */
+  height: 40px;
+  /* Altura fixa */
+  margin-top: -10px;
+  margin-left: 10px;
+}
+
+#theme-toggle-login {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  /* Largura fixa */
+  height: 40px;
+  /* Altura fixa */
+  margin-top: -25px;
+  margin-left: 10px;
+}
+
+/* CONTÊINER DOS ÍCONES */
+.theme-icon-container {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+/* ESTILO DOS ÍCONES */
+.theme-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+/* ÍCONE DO SOL (visível no light mode) */
+.sun-icon {
+  opacity: 1;
+}
+
+/* ÍCONE DA LUA (visível no dark mode) */
+.moon-icon {
+  opacity: 1;
+}
+
+/* EFEITOS HOVER */
+#theme-toggle:hover .theme-icon {
+  transform: scale(1.05);
+}
+
+#theme-toggle-login:hover .theme-icon {
+  transform: scale(1.05);
+}
+
+/* TEMA DARK - INVERTE OS ÍCONES */
+[data-theme="dark"] .sun-icon {
+  opacity: 1;
+}
+
+[data-theme="dark"] .moon-icon {
+  opacity: 1;
+}
+
+/*DASHBOARD PRINCIPAL*/
+.textomargindash {
+  padding-top: 60px;
+  margin: auto;
+}
+
+.centraltexto {
+  display: flex;
+}
+
+/* Container do texto + imagem */
+.texto-cerebro {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Estilo do texto */
+.texto {
+  flex: 1;
+}
+
+/* Container da imagem */
+.div-cerebro {
+  flex-shrink: 0;
+  margin-left: 40px;
+  transform: rotate(-15deg);
+}
+
+/* Imagem */
+.cerebro {
+  width: 150px;
+  height: auto;
+  vertical-align: middle;
+  margin-bottom: 20px;
+}
+
+.formprincipaldash {
+  display: flex;
+  align-items: center;
+  /* Alinhamento vertical */
+  justify-content: center;
+  /* Alinhamento horizontal */
+  gap: 5px;
+  /* Espaço entre os elementos */
+  max-width: 800px;
+  margin: auto;
+}
+
+.fundocinza {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.formdois a {
+  padding: 0px 20px 0px 10px;
+  background-color: #222831;
+  border-radius: 4px;
+  position: relative;
+  /* Permite posicionamento absoluto do pseudo-elemento */
+  display: inline-block;
+  /* Necessário para o efeito funcionar */
+  transition: all 0.2s ease;
+  margin-bottom: 4px;
+}
+
+.formdois a:hover {
+  transform: translateY(-4px);
+  /* Faz o elemento "subir" */
+}
+
+/* Criando o border-bottom com pseudo-elemento */
+.formdois a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  /* Posição inicial (fora do elemento) */
+  width: 100%;
+  height: 4px;
+  background-color: #206467;
+  border-radius: 0 0 4px 4px;
+  /* Arredonda apenas as bordas inferiores */
+  transform: scaleX(0);
+  /* Inicia invisível */
+  transition: transform 0.2s ease;
+}
+
+.formdois a:hover::after {
+  transform: scaleX(1);
+  /* Mostra o border-bottom */
+  bottom: 0;
+  /* Posiciona corretamente */
+}
+
+.formum {
+  display: flex;
+  align-items: center;
+  /* Centraliza verticalmente */
+  padding: 20px;
+  flex: 1;
+  /* Ocupa espaço disponível */
+  max-width: 50%;
+}
+
+.formum p {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Itim', serif;
+  text-align: left;
+  font-size: 14pt;
+  border: 3px solid #206467;
+  border-radius: 3px;
+}
+
+.imagem-seta {
+  width: 60px;
+  /* Tamanho controlado */
+  height: auto;
+  flex-shrink: 0;
+  /* Impede que a seta diminua */
+  transform: rotate(40deg);
+  margin-left: 30px;
+  margin-right: 0px;
+}
+
+.formdois {
+  padding: 20px;
+  flex: 0 0 auto;
+  /* Não cresce nem encolhe */
+}
+
+/* Estilo da lista */
+.formdois ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-family: 'Inknut Antiqua', serif;
+}
+
+.formdois li {
+  padding: 8px 0;
+}
+
+/*LOGIN*/
+.password-container {
+  position: relative;
+  width: 170px;
+}
+
+.logebuttom {
+  display: flex;
+  margin: auto;
+  width: fit-content;
+  align-items: center;
+  vertical-align: center;
+  padding-bottom: -40px;
+}
+
+.cpfesenha {
+  display: flex;
+  gap: 15px;
+}
+
+.cpfesenha p {
+  font-family: 'Itim', serif;
+  font-size: 13pt;
+}
+
+#senha {
+  width: 170px;
+  /* Espaço para o botão */
+  border: none;
+  border-radius: 4px;
+}
+
+.divsemsenha {
+  display: flex;
+  margin: auto;
+  width: fit-content;
+  margin-top: -10px;
+  font-family: 'Itim', serif;
+}
+
+.minhasenha {
+  margin-left: 60px;
+}
+
+textarea#recado {
+  width: 180px;
+  max-height: 250px;
+  resize: none;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: none;
+  background-color: #D9D9D9;
+  color: #51514B;
+}
+
+.divsemsenha a {
+  background-color: transparent;
+  padding: 0;
+}
+
+.senha-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#icone-senha {
+  width: 20px;
+  /* Ajuste conforme necessário */
+  height: 20px;
+  margin-top: 17px;
+}
+
+/*PERFIL*/
+.navegacaoperfil {
+  display: flex;
+  width: fit-content;
+  margin: auto;
+  align-items: center;
+}
+
+.navegacaoperfil a {
+  background-color: #393E46;
+  padding: 10px 30px;
+  font-family: 'Itim', serif;
+  border-radius: 4px;
+}
+
+.botaoperfil {
+  margin-left: 400px;
+}
+
+.imagemperfil {
+  width: 90px;
+  height: auto;
+  align-self: flex-end;
+  border-radius: 50%;
+  object-fit: cover;  
+  flex-direction: column;
+}
+
+.informacoes {
+  width: fit-content;
+  margin: auto;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.nomecpf {
+  width: 275px;
+}
+
+.nomecpfimg {
+  display: flex;
+}
+
+.msgsexo {
+  display: flex;
+}
+
+.sexoanexosenha {
+  width: 200px;
+}
+
+.barranomeperfil, .barracpfperfil {
+  width: 250px;
+  border: none;
+  color: #51514B;
+  border-radius: 3px;
+  background-color: #D9D9D9;
+  margin: 0;
+  font-family: 'Itim', serif;
+}
+
+.barracpfperfil {
+  padding: 5px 0px;
+  padding-left: 4px;
+  color: #51514B;
+}
+
+.barrasexoperfil, .barraanexoperfil, .barrasenhaperfil {
+  background-color: #D9D9D9;
+  width: 180px;
+  padding: 5px 0px;
+  padding-left: 4px;
+  margin: 0;
+  border-radius: 3px;
+  color: #51514B;
+  font-family: 'Itim', serif;
+}
+
+.barraanexoperfil {
+  padding: 5px 38px;
+  background-color: #206467;
+  color: aliceblue;
+}
+
+.pnome, .psexo, .psenha, .pmsg, .panexo, .pcpf{
+  margin-top: 7px;
+  margin-bottom: 5px;
+  font-family: 'Itim', serif;
+  font-size: 12pt;
+}
+
+.botoesperfil {
+  width: 380px;
+  margin: auto;
+  text-align: end;
+  margin-top: 10px;
+}
+
+.foto-perfil {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.atualizarperfil {
+  background-color: #118866;
+  color: aliceblue;
+  padding: 10px 16px;
+  border: none;
+  line-height: 5px;
+  border-radius: 3px;
+  transition: background-color 0.5s, border-radius 0.5s;
+  font-family: 'Itim', sans;
+}
+
+.excluirperfil {
+  background-color: #AA3311;
+  color: aliceblue;
+  border: none;
+  line-height: 5px;
+  padding: 10px 25px;
+  border-radius: 3px;
+  transition: background-color 0.5s, border-radius 0.5s;
+  font-family: 'Itim', sans;
+  margin-left: 5px;
+}
+
+.atualizarperfil:hover {
+  background-color: #11dd77;
+  cursor: pointer;
+  border-radius: 0px;
+}
+
+.excluirperfil:hover {
+  background-color: #ff3311;
+  cursor: pointer;
+  border-radius: 0px;
+}
+
+.modo-edicao input[type="text"],
+.modo-edicao textarea,
+.modo-edicao .barranomeperfil {
+  color: black;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    flex-direction: column;
+    /* Empilha os elementos verticalmente */
+    align-items: center;
+    /* Centraliza os elementos */
+  }
+
+  .criando,
+  .navegacao {
+    margin-left: 0;
+    /* Remove a margem fixa */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    /* Empilha os elementos verticalmente */
+    align-items: center;
+    /* Centraliza os elementos */
+  }
+
+  .criando,
+  .navegacao {
+    margin-left: 0;
+    /* Remove a margem fixa */
+  }
+
+  .textomargin,
+  .textomargindash {
+    padding-left: 20px;
+    /* Reduz o padding nas laterais */
+    padding-right: 20px;
+  }
+
+  .texto,
+  .texto2 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .linksfooter a {
+    margin-bottom: 20px;
+  }
+
+  .registro-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .registro-card>div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .listanav li {
+    width: 100%;
+    /* Cada item ocupa a largura total */
+    text-align: center;
+    /* Centraliza o texto */
+  }
+
+  .formprincipal {
+    width: 100%;
+    /* Ocupa a largura total */
+  }
+
+  .filebuttom {
+    width: 100%;
+    /* Ocupa a largura total */
+  }
+}
